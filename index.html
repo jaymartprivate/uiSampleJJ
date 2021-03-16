@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Endangered.</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a  href="#" class="logo">Endangered.</a>
+			<div class="toggle" onclick="toggleMenu()"></div>
+		</header>
+		<div class="glass"></div>
+		<div class="content">
+			<h2>Endangered...<br><span>Together, Let's protect them.</span></h2>
+		</div>
+		<video src="vid/video.mp4" autoplay muted loop></video>
+
+		<ul class="sci">
+			<li style="--i:1"><a href="#">Facebook</a></li>
+			<li style="--i:2"><a href="#">Twitter</a></li>
+			<li style="--i:3"><a href="#">Linkedin</a></li>
+		</ul>
+		<ul class="navigation">
+			<li style="--i:1"><a href="#">Home</a></li>
+			<li style="--i:2"><a href="htmls/main.html">List</a></li>
+			<li style="--i:3"><a href="#">About</a></li>
+			<li style="--i:4"><a href="#">Contact</a></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+	    function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var section = document.querySelector('section');
+	      menuToggle.classList.toggle('active');
+	      section.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
